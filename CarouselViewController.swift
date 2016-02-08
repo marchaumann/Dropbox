@@ -1,20 +1,19 @@
 //
-//  CreateAccountRootViewController.swift
+//  CarouselViewController.swift
 //  Dropbox
 //
-//  Created by Marc Haumann on 2/3/16.
+//  Created by Marc Haumann on 2/7/16.
 //  Copyright © 2016 Marc Haumann. All rights reserved.
 //
 
 import UIKit
 
-class CreateAccountRootViewController: UIViewController {
+class CarouselViewController: UIViewController {
 
-
+    @IBOutlet weak var carouselScrollView: UIScrollView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        performSegueWithIdentifier("firstSegue", sender: self)
-        
+        carouselScrollView.contentSize=CGSize(width: 960, height: 500)
         // Do any additional setup after loading the view.
     }
 
